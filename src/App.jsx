@@ -20,7 +20,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className={theme}>
+    <div className={`scroll-smooth ${theme}`}>
       <Banner />
       <JobPosts />
       <Courses />

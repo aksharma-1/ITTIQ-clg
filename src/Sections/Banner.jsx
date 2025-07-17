@@ -48,8 +48,8 @@ function Banner() {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
-                    duration: 1.5,
-                    scale: { type: "spring", visualDuration: 0.9, bounce: 0.5 },
+                    duration: 2.5,
+                    scale: { type: "spring", visualDuration: 1.9, bounce: 0.5 },
                   }}
                 >
                   <h1 className="text-3xl sm:text-xl md:text-2xl lg:text-4xl xl:text-6xl px-5 sm:w-[60%] md:w-[80%] xl:w-[60%] mx-auto font-bold capitalize sm:leading-8 md:leading-8 xl:leading-20">

@@ -1,15 +1,35 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function StudentLife() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 px-10 sm:px-30 py-20 md:px-10 2xl:w-[70%] 2xl:mx-auto">
-      <div className="relative" id="students_image">
-        <div className="absolute bg-neutral-800 text-white text-2xl md:text-3xl lg:text-4xl w-[80%] xl:w-[60%] p-10 -bottom-5 -right-5 sm:-bottom-14 sm:-right-14">
+      <motion.div
+        className="relative"
+        id="students_image"
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.1 }}
+        initial={{ opacity: 0, x: -70 }}
+      >
+        <motion.div
+          className="absolute bg-neutral-800 text-white text-2xl md:text-3xl lg:text-4xl w-[80%] xl:w-[60%] p-10 -bottom-5 -right-5 sm:-bottom-14 sm:-right-14"
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          initial={{ opacity: 0, y: 70 }}
+        >
           <h1>From Unemployable to a skill worker </h1>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      <div className="flex flex-col justify-center gap-5">
+      <motion.div
+        className="flex flex-col justify-center gap-5"
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.1 }}
+        initial={{ opacity: 0, x: 70 }}
+      >
         <h6 className="text-orange-700 text-xl font-medium">High rated</h6>
         <h1 className="text-5xl font-medium w-[70%]">Student Campus Life</h1>
         <h6 className="font-medium text-xl">
@@ -29,7 +49,7 @@ function StudentLife() {
             <p className="text-xl font-medium">+229-54335532</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

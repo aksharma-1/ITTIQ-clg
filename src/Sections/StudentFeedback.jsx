@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import StudentFeedbackCard from "../Components/StudentFeedbackCard";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 
 function StudentFeedback() {
   var settings = {
@@ -83,13 +84,25 @@ function StudentFeedback() {
 
   return (
     <div className="px-10 py-20 2xl:w-[70%] 2xl:mx-auto">
-      <h1 className="text-center text-4xl font-medium my-3">
+      <motion.h1
+        className="text-center text-4xl font-medium my-3"
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.1 }}
+        initial={{ opacity: 0, x: 70 }}
+      >
         What Our Student’s Say
-      </h1>
-      <h6 className="text-center text-neutral-400 w-[80%] md:w-[55%] mx-auto leading-4">
+      </motion.h1>
+      <motion.h6
+        className="text-center text-neutral-400 w-[80%] md:w-[55%] mx-auto leading-4"
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        initial={{ opacity: 0, x: -70 }}
+      >
         L'ITTIQ ne forme pas seulement des experts en technologie, mais
         également les futurs leaders de l'industrie technologique
-      </h6>
+      </motion.h6>
 
       <div className="slider-container mt-10">
         <Slider {...settings}>
