@@ -70,22 +70,22 @@ function Navbar() {
             transition: "transform 0.3s ease, opacity 0.3s ease",
           }}
         >
-          <li className="list-none text-center p-4 transition-all cursor-pointer">
+          <li className="list-none text-center p-4 transition-all cursor-pointer text-zinc-700 hover:text-zinc-950">
             HOME
           </li>
-          <li className="list-none text-center p-4 transition-all cursor-pointer">
+          <li className="list-none text-center p-4 transition-all cursor-pointer text-zinc-700 hover:text-zinc-950">
             Admissions
           </li>
-          <li className="list-none text-center p-4 transition-all cursor-pointer">
+          <li className="list-none text-center p-4 transition-all cursor-pointer text-zinc-700 hover:text-zinc-950">
             Corporate Training
           </li>
-          <li className="list-none text-center p-4 transition-all cursor-pointer">
+          <li className="list-none text-center p-4 transition-all cursor-pointer text-zinc-700 hover:text-zinc-950">
             Program & Courses
           </li>
-          <li className="list-none text-center p-4 transition-all cursor-pointer">
+          <li className="list-none text-center p-4 transition-all cursor-pointer text-zinc-700 hover:text-zinc-950">
             About Us
           </li>
-          <li className="list-none text-center p-4 transition-all cursor-pointer">
+          <li className="list-none text-center p-4 transition-all cursor-pointer text-zinc-700 hover:text-zinc-950">
             Blog
           </li>
         </div>

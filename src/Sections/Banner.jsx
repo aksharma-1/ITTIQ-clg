@@ -14,11 +14,11 @@ function Banner() {
 
   return (
     <>
-      <div id="banner" className="relative 2xl:w-[70%] 2xl:mx-auto">
+      <div id="banner" className="relative">
         <Navbar />
 
         <div className=" h-full ">
-          <div className="overflow-hidden relative h-full w-[100%]">
+          <div className="overflow-hidden relative h-full w-full">
             <div
               className="flex transition duration-500 ease-out h-full"
               style={{
@@ -26,7 +26,7 @@ function Banner() {
               }}
             >
               {slides.map((s, index) => (
-                <img key={index} src={s} className="object-cover" />
+                <img key={index} src={s} className="object-cover w-full h-full" />
               ))}
             </div>
 
@@ -52,7 +52,7 @@ function Banner() {
                     scale: { type: "spring", visualDuration: 1.9, bounce: 0.5 },
                   }}
                 >
-                  <h1 className="text-3xl sm:text-xl md:text-2xl lg:text-4xl xl:text-6xl px-5 sm:w-[60%] md:w-[80%] xl:w-[60%] mx-auto font-bold capitalize sm:leading-8 md:leading-8 xl:leading-20">
+                  <h1 className="text-3xl sm:text-xl md:text-2xl lg:text-5xl xl:text-6xl 2xl:text-8xl 2xl:leading-28 px-5 sm:w-[60%] md:w-[80%] xl:w-[60%] mx-auto font-bold capitalize sm:leading-8 md:leading-8 lg:leading-16 xl:leading-20">
                     Améliorez
                     <span className="text-orange-600">
                       {" "}
@@ -62,7 +62,7 @@ function Banner() {
                     <span className="text-orange-600">carrière</span>
                   </h1>
                 </motion.div>
-                <h6 className="text-neutral-400 px-3">
+                <h6 className="text-neutral-400 px-3 2xl:text-3xl">
                   Nous nous engageons à fournir une éducation technologique à la
                   prochaine <span className="md:block">génération</span> de
                   leaders au Bénin, en promouvant l'égalité et l'autonomisation.
@@ -77,7 +77,7 @@ function Banner() {
                     }}
                   >
                     <button
-                      className={`group relative border-1 cursor-pointer inline-flex h-12 items-center justify-center overflow-hidden rounded-xl ${
+                      className={`group relative border-1 cursor-pointer inline-flex h-12 2xl:text-3xl 2xl:p-10 items-center justify-center overflow-hidden rounded-xl ${
                         activeButton !== 0 ? "bg-transparent" : "bg-orange-600"
                       } px-6 font-medium text-neutral-50`}
                       onClick={() => setActiveButton(0)}
@@ -101,7 +101,7 @@ function Banner() {
                     }}
                   >
                     <button
-                      className={`group relative border-1 cursor-pointer inline-flex h-12 items-center justify-center overflow-hidden rounded-xl ${
+                      className={`group relative border-1 cursor-pointer inline-flex h-12 2xl:text-3xl 2xl:p-10 items-center justify-center overflow-hidden rounded-xl ${
                         activeButton !== 1 ? "bg-transparent" : "bg-orange-600"
                       } px-6 font-medium text-neutral-50`}
                       onClick={() => setActiveButton(1)}

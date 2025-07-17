@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="bg-black text-white sm:px-12 md:px-32 p-10 2xl:w-[70%] 2xl:mx-auto">
+    <div className="bg-black text-white sm:px-12 md:px-32 p-10">
       <div className="border-b-2 flex flex-col md:flex-row justify-between items-center pb-6 gap-10">
         <div>
           <img src="Images/logo.png" alt="Logo" />
@@ -85,7 +85,7 @@ function Footer() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center justify-items-normal">
         <div className="order-last md:order-first w-full">
-          <h6 className="text-sm text-center font-medium">
+          <h6 className="text-sm text-center md:text-left font-medium">
             loremipsum© 2023. All Rights Reserved.
           </h6>
         </div>

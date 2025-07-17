@@ -11,10 +11,8 @@ import StudentLife from "./Sections/StudentLife";
 import Footer from "./Sections/Footer";
 
 function App() {
-
-
   return (
-    <div className={`scroll-smooth`}>
+    <>
       <Banner />
       <JobPosts />
       <Courses />
@@ -22,7 +20,7 @@ function App() {
       <StudentFeedback />
       <StudentLife />
       <Footer />
-    </div>
+    </>
   );
 }
 

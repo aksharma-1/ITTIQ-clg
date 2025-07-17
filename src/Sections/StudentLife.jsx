@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function StudentLife() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 px-10 sm:px-30 py-20 md:px-10 2xl:w-[70%] 2xl:mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 px-10 sm:px-30 py-20 md:px-10 2xl:w-[70%] 2xl:mx-auto  overflow-hidden">
       <motion.div
         className="relative"
         id="students_image"
@@ -17,7 +17,7 @@ function StudentLife() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          initial={{ opacity: 0, y: 70 }}
+          initial={{ opacity: 0, y: -70 }}
         >
           <h1>From Unemployable to a skill worker </h1>
         </motion.div>

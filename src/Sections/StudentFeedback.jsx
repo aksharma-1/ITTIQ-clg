@@ -83,7 +83,7 @@ function StudentFeedback() {
   ];
 
   return (
-    <div className="px-10 py-20 2xl:w-[70%] 2xl:mx-auto">
+    <div className="px-10 py-20 2xl:w-[70%] 2xl:mx-auto overflow-hidden">
       <motion.h1
         className="text-center text-4xl font-medium my-3"
         whileInView={{ opacity: 1, x: 0 }}
