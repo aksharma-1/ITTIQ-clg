@@ -11,16 +11,10 @@ import StudentLife from "./Sections/StudentLife";
 import Footer from "./Sections/Footer";
 
 function App() {
-  const [theme, setTheme] = React.useState("light");
 
-  useEffect(() => {
-    const root = document.documentElement;
-    root.classList.remove("light", "dark");
-    root.classList.add(theme);
-  }, [theme]);
 
   return (
-    <div className={`scroll-smooth ${theme}`}>
+    <div className={`scroll-smooth`}>
       <Banner />
       <JobPosts />
       <Courses />
