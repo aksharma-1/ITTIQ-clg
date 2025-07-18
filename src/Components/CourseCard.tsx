@@ -1,6 +1,6 @@
 import React from "react";
 
-function CourseCard({ image }) {
+function CourseCard({ image }: { image: string }) {
   return (
     <div className="rounded-xl shadow-xl pb-2">
       <div className="w-full h-60 overflow-hidden">

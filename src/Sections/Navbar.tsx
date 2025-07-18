@@ -12,7 +12,7 @@ const activeRoute = () => {
 };
 
 function Navbar() {
-  const navigations = [
+  const navigations:string[] = [
     "home",
     "admission",
     "corporate training",

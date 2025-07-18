@@ -1,6 +1,6 @@
 import React from "react";
 
-function JobCard({ image }) {
+function JobCard({ image }:{image: string}) {
   return (
     <div className="rounded-xl shadow-2xl pb-2 overflow-hidden">
       <img src={image} className="object-cover w-full cursor-pointer h-56 rounded-t-xl hover:scale-105 transition-all duration-300" />

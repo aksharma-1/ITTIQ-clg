@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import * as motion from "motion/react-client";
+import slides from "../assets/slideData.json"
+
+interface Slide {
+  id: number;
+  image: string;
+  title: string;
+}
 
 function Banner() {
-  let slides = [
-    "/Images/banner.jpg",
-    "/Images/banner.jpg",
-    "/Images/banner.jpg",
-    "/Images/banner.jpg",
-  ];
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [activeButton, setActiveButton] = useState(0);
+
+  const [currentSlide, setCurrentSlide] = useState<number>(0);
+  const [activeButton, setActiveButton] = useState<number>(0);
 
   return (
     <>
@@ -25,19 +27,19 @@ function Banner() {
                 transform: `translateX(-${currentSlide * 100}%)`,
               }}
             >
-              {slides.map((s, index) => (
-                <img key={index} src={s} className="object-cover w-full h-full" />
+              {slides.slides.map((s:Slide) => (
+                <img key={s.id} src={s.image} className="object-cover w-full h-full" />
               ))}
             </div>
 
             <div className="absolute bottom-0 flex justify-center gap-3 w-full py-5">
-              {slides.map((s, index) => (
+              {slides.slides.map((s:Slide) => (
                 <div
-                  key={index}
+                  key={s.id}
                   className={`h-1 w-8 rounded-full cursor-pointer ${
-                    currentSlide == index ? "bg-orange-700" : "bg-gray-200"
+                    currentSlide == s.id ? "bg-orange-700" : "bg-gray-200"
                   }`}
-                  onClick={() => setCurrentSlide(index)}
+                  onClick={() => setCurrentSlide(s.id)}
                 ></div>
               ))}
             </div>

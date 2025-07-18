@@ -3,6 +3,12 @@ import StudentFeedbackCard from "../Components/StudentFeedbackCard";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 
+interface Student{
+  name: string;
+  position: string;
+  image: string;
+}
+
 function StudentFeedback() {
   var settings = {
     dots: true,
@@ -12,8 +18,8 @@ function StudentFeedback() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    beforeChange: (oldIndex, newIndex) => setPage(newIndex),
-    appendDots: (dots) => (
+    beforeChange: (oldIndex:number, newIndex:number) => setPage(newIndex),
+    appendDots: (dots:React.ReactNode) => (
       <div className="slider_dots">
         <ul
           className="flex justify-center gap-3 w-full"
@@ -23,7 +29,7 @@ function StudentFeedback() {
         </ul>
       </div>
     ),
-    customPaging: (i) => (
+    customPaging: (i:number) => (
       <div
         className={`h-3 rounded-full ${
           i === currentPage ? "bg-orange-700 w-6" : "bg-neutral-500 w-3"
@@ -57,9 +63,9 @@ function StudentFeedback() {
     ],
   };
 
-  const [currentPage, setPage] = useState(0);
+  const [currentPage, setPage] = useState<number>(0);
 
-  const students = [
+  const students:Student[] = [
     {
       name: "Finlay Kirk",
       position: "Web Developper",

@@ -3,8 +3,9 @@ import CourseCard from "../Components/CourseCard";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 
+
 function Courses() {
-  var settings = {
+  var settings:any = {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -36,7 +37,7 @@ function Courses() {
     ],
   };
 
-  const courses = [
+  const courses: string[] = [
     "/Images/course1.jpg",
     "/Images/course1.jpg",
     "/Images/course1.jpg",
@@ -63,7 +64,7 @@ function Courses() {
         </motion.div>
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={ { once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >

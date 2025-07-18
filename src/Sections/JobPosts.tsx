@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import { motion } from "framer-motion";
 
 function JobPosts() {
-  var settings = {
+  var settings: any = {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -36,7 +36,7 @@ function JobPosts() {
     ],
   };
 
-  const cards = [
+  const cards: string[] = [
     "/Images/JobCards/card1.jpg",
     "/Images/JobCards/card2.jpg",
     "/Images/JobCards/card3.jpg",
@@ -81,7 +81,7 @@ function JobPosts() {
         <motion.button
           className="group relative cursor-pointer"
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 1}}
+          viewport={{ once: true, amount: 1 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           initial={{ opacity: 0, y: 70 }}
         >
