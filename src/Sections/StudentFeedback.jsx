@@ -87,7 +87,7 @@ function StudentFeedback() {
       <motion.h1
         className="text-center text-4xl font-medium my-3"
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.8, delay: 0.1 }}
         initial={{ opacity: 0, x: 70 }}
       >
@@ -96,7 +96,7 @@ function StudentFeedback() {
       <motion.h6
         className="text-center text-neutral-400 w-[80%] md:w-[55%] mx-auto leading-4"
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         initial={{ opacity: 0, x: -70 }}
       >

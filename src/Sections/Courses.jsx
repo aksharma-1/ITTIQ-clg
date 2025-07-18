@@ -49,7 +49,7 @@ function Courses() {
         <motion.div
           className="flex flex-col gap-2"
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.5 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
@@ -63,7 +63,7 @@ function Courses() {
         </motion.div>
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={ { once: true }}
+          viewport={ { once: true, amount: 0.5 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
@@ -80,7 +80,7 @@ function Courses() {
       <motion.div
         className="slider-container mt-10"
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.5 }}
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.5, delay: 0.1 }}
       >

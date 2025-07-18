@@ -48,7 +48,7 @@ function JobPosts() {
       <motion.h1
         className="text-center text-4xl font-medium my-3"
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 1 }}
         transition={{ duration: 0.8, delay: 0.1 }}
         initial={{ opacity: 0, y: 70 }}
       >
@@ -57,7 +57,7 @@ function JobPosts() {
       <motion.h6
         className="text-center text-neutral-500 w-[60%] mx-auto"
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 1 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         initial={{ opacity: 0, y: 70 }}
       >
@@ -81,7 +81,7 @@ function JobPosts() {
         <motion.button
           className="group relative cursor-pointer"
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 1}}
           transition={{ duration: 0.8, delay: 0.1 }}
           initial={{ opacity: 0, y: 70 }}
         >

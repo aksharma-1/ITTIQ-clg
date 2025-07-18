@@ -8,14 +8,14 @@ function StudentLife() {
         className="relative"
         id="students_image"
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.8, delay: 0.1 }}
         initial={{ opacity: 0, x: -70 }}
       >
         <motion.div
           className="absolute bg-neutral-800 text-white text-2xl md:text-3xl lg:text-4xl w-[80%] xl:w-[60%] p-10 -bottom-5 -right-5 sm:-bottom-14 sm:-right-14"
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           initial={{ opacity: 0, y: -70 }}
         >
@@ -26,7 +26,7 @@ function StudentLife() {
       <motion.div
         className="flex flex-col justify-center gap-5"
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.8, delay: 0.1 }}
         initial={{ opacity: 0, x: 70 }}
       >
